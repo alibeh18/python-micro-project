@@ -1,0 +1,18 @@
+#!/usr/bun/python3
+#  					def = تابع
+
+print("Heloo", "word" )
+
+def heloo():
+	print("heloo worde")
+	
+heloo()
+
+def heloo(name):
+	print("heloo", name)
+	
+heloo("ali")
+
+def volume(width, length, height):
+	print(width * length * height)
+volume(2, 3, 5)

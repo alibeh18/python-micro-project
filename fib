@@ -1,0 +1,16 @@
+#!/usr/bun/python3
+
+#                    cache = ذخیره کردن شماره های قبلی را در خود تا سرعتش بالا برود
+
+cache = [0] * 100
+
+def fib(num):
+	if cache[num] != 0:
+		return cache[num]
+	elif num == 0 or num == 1:
+		return 1
+	else:
+		result = fib(num-1) + fib(num-2)
+		cache[num] = result
+		return result
+print(fib(99))  
